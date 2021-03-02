@@ -42,9 +42,9 @@ app.get('/viewall', async(req,res)=>{
 app.post('/search', async(req,res)=>{
     try
     {
-         brandModel.find(req.body,(error,data)=>{
+         brandModel.find(req.body, (error, data)=>{
              if (error){throw error}
-             else{res.json(data)};
+             else{res.json(data)}
          })
     }
     catch(error){
